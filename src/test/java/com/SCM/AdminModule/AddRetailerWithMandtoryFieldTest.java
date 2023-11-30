@@ -27,5 +27,6 @@ public class AddRetailerWithMandtoryFieldTest extends BaseClass {
 		arp.retailerValidate(driver, areaDD);
 		ahp.RetailerMod();
 		
+		
 	}
 }
