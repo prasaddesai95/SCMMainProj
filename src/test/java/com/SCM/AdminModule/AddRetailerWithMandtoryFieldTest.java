@@ -14,7 +14,6 @@ public class AddRetailerWithMandtoryFieldTest extends BaseClass {
 		
 		AdminHomePage ahp = new AdminHomePage(driver);
 		ahp.addRetailer();
-	
 		String areaDD = eLib.readDataFromExcel("Sheet4", 0, 4);
 		
 		AddRetailerPage arp = new AddRetailerPage(driver);
