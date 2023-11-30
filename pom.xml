@@ -85,7 +85,7 @@
 							<version>3.2.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>GroupSm.xml</suiteXmlFile>
+									<suiteXmlFile>ScmGroup.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
