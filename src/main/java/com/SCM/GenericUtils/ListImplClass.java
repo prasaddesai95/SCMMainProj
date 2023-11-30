@@ -41,15 +41,15 @@ public class ListImplClass implements ITestListener {
 		String FScript=FS+new JavaUtils().systemDateInFormat();
 		test.addScreenCaptureFromPath(FScript);
 		
-		try {
-			WebDriverUtils.getscreenShot(BaseClass.sdriver, FS);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		test.log(Status.FAIL, result.getThrowable());
-		test.log(Status.FAIL, FScript+"---> Failed");
-		Reporter.log(FScript+"--> TestScript execution failed");
+//		try {
+//			WebDriverUtils.getscreenShot(BaseClass.sdriver, FS);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		test.log(Status.FAIL, result.getThrowable());
+//		test.log(Status.FAIL, FScript+"---> Failed");
+//		Reporter.log(FScript+"--> TestScript execution failed");
 	}
 
 	public void onTestSkipped(ITestResult result) 

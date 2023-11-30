@@ -21,7 +21,7 @@ public class BaseClass {
 	public ExcelUtils eLib= new ExcelUtils();
 	public WebDriverUtils wLib = new WebDriverUtils();
 	public WebDriver driver;
-	public static WebDriver sdriver;
+	//public static WebDriver sdriver;
 	
 	@BeforeSuite(alwaysRun = true)
 	public void config_BS() throws Throwable
@@ -30,11 +30,11 @@ public class BaseClass {
 		System.out.println("-- connect to DB --");
 	}
 	
-	@Parameters("BROWS")
+	//@Parameters("BROWS")
 	@BeforeClass(alwaysRun = true)
-	public void config_BC(String BROWSER) throws Throwable
+	public void config_BC() throws Throwable
 	{
-		//String BROWSER = fLib.readDataFromPropertyFile("browser");
+		String BROWSER = fLib.readDataFromPropertyFile("browser");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
@@ -50,7 +50,7 @@ public class BaseClass {
 		{
 			System.out.println("-- Invalid Browser --");
 		}
-		sdriver = driver;
+		//sdriver = driver;
 		
 		wLib.maximizeWindow(driver);
 		

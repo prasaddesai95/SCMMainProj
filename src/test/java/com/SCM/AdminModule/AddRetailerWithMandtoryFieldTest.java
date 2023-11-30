@@ -1,16 +1,15 @@
 package com.SCM.AdminModule;
 
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.SCM.GenericUtils.BaseClass;
 import com.SCM.ObjectPom.AddRetailerPage;
 import com.SCM.ObjectPom.AdminHomePage;
 
-@Listeners(com.SCM.GenericUtils.ListImplClass.class)
+
 public class AddRetailerWithMandtoryFieldTest extends BaseClass {
 
-	@Test(groups = "smoke")
+	@Test
 	public void addRetailerWithMandtoryFieldTest() throws Throwable {
 		
 		AdminHomePage ahp = new AdminHomePage(driver);
