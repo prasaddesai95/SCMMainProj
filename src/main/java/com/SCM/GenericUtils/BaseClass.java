@@ -35,7 +35,7 @@ public class BaseClass {
 	public void config_BC() throws Throwable
 	{
 		String BROWSER = fLib.readDataFromPropertyFile("browser");
-		
+		Thread.sleep(5000);
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
 			driver = new ChromeDriver();
