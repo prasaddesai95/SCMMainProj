@@ -35,7 +35,7 @@ public class BaseClass {
 	public void config_BC() throws Throwable
 	{
 		String BROWSER = fLib.readDataFromPropertyFile("browser");
-		Thread.sleep(15000);
+		
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
 			driver = new ChromeDriver();
@@ -51,7 +51,7 @@ public class BaseClass {
 			System.out.println("-- Invalid Browser --");
 		}
 		//sdriver = driver;
-		
+		Thread.sleep(15000);
 		wLib.maximizeWindow(driver);
 		
 	}
