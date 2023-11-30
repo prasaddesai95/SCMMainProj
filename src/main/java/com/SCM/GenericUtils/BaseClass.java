@@ -9,6 +9,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.SCM.ObjectPom.AdminHomePage;
 import com.SCM.ObjectPom.LoginPage;
@@ -29,11 +30,11 @@ public class BaseClass {
 		System.out.println("-- connect to DB --");
 	}
 	
-	//@Parameters("BROWS")
+	@Parameters("BROWS")
 	@BeforeClass(alwaysRun = true)
-	public void config_BC() throws Throwable
+	public void config_BC(String BROWSER) throws Throwable
 	{
-		String BROWSER = fLib.readDataFromPropertyFile("browser");
+		//String BROWSER = fLib.readDataFromPropertyFile("browser");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
