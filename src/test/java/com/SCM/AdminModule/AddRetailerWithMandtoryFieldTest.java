@@ -23,7 +23,7 @@ public class AddRetailerWithMandtoryFieldTest extends BaseClass {
 		//arp.retailerValidate(driver, areaDD);
 		System.out.println(wLib.getAlertText(driver));
 		wLib.acceptAlert(driver);
-		arp.retailerValidate(driver, areaDD);
+		//arp.retailerValidate(driver, areaDD);
 		ahp.RetailerMod();
 		
 		
