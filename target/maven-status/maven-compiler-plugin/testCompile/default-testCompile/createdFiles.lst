@@ -1,0 +1,11 @@
+com\SCM\AdminModule\AddRetailerWithMandtoryFieldTest.class
+com\TestNG\sampleCtest.class
+com\SCM\AdminModule\SearchByInvoieIdTest.class
+com\SCM\RetailerModule\AddRetailerPostOrderTest.class
+com\TestNG\sampleBtest.class
+com\SCM\ManufacturerModule\ManuChangePasswordTest.class
+com\TestNG\sampleAtest.class
+com\SCM\AdminModule\EditTheManufacturerTest.class
+com\SCM\ManufacturerModule\ManfacAddProductByKgTest.class
+com\TestNG\HardAssertTest.class
+com\TestNG\SoftAsser.class

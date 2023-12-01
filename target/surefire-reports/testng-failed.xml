@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.TestNG.HardAssertTest">
+        <methods>
+          <include name="hardAssertTest"/>
+        </methods>
+      </class> <!-- com.TestNG.HardAssertTest -->
+      <class name="com.SCM.RetailerModule.AddRetailerPostOrderTest">
+        <methods>
+          <include name="addRetailerPostOrderTest"/>
+        </methods>
+      </class> <!-- com.SCM.RetailerModule.AddRetailerPostOrderTest -->
+      <class name="com.SCM.ManufacturerModule.ManuChangePasswordTest">
+        <methods>
+          <include name="manuChangePasswordTest"/>
+        </methods>
+      </class> <!-- com.SCM.ManufacturerModule.ManuChangePasswordTest -->
+      <class name="com.SCM.AdminModule.SearchByInvoieIdTest">
+        <methods>
+          <include name="searchByInvoieIdTest"/>
+          <include name="config_AM"/>
+          <include name="config_BM"/>
+          <include name="config_AC"/>
+          <include name="config_AS"/>
+          <include name="config_BC"/>
+          <include name="config_BS"/>
+        </methods>
+      </class> <!-- com.SCM.AdminModule.SearchByInvoieIdTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
