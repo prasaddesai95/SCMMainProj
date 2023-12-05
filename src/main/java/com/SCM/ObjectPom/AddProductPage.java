@@ -35,6 +35,7 @@ public class AddProductPage extends WebDriverUtils {
 	public AddProductPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, this);
 	}
 
 	public WebElement getProductName_Tf() {

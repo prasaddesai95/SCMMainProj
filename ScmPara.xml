@@ -4,8 +4,7 @@
   
   <test thread-count="3" parallel="tests" name="Test1">
     <classes>
-      <class name="com.SCM.AdminModule.EditTheManufacturerTest"/>
-      
+      <class name="com.SCM.AdminModule.EditTheManufacturerTest"/>      
     </classes>
   </test> <!-- Test -->
   
